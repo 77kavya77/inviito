@@ -16,7 +16,7 @@ function createFooter() {
                 <div class="social-links">
                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://www.instagram.com/inviito/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://wa.me/1234567890?text=Hello! I want to order a digital invitation template"><i
+                    <a href="https://wa.me/9847697511?text=Hello! I want to order a digital invitation template"><i
                             class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
@@ -252,4 +252,5 @@ if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', createFooter);
 } else {
     createFooter();
+
 }
