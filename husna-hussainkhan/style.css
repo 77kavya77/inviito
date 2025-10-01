@@ -25,7 +25,7 @@ body {
 /* Header Styles */
 header {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-        url('images/img4.jpg');
+        url('husna-hussainkhan/images/img4.jpg');
     background-size: cover;
     background-position: 5% 44% ;
     height: 100vh;
@@ -145,7 +145,7 @@ h1 {
     max-width: 400px;
     padding: 2rem;
     background-color: whitesmoke;
-    background-image: url(images/bg2.jpg);
+    background-image: url(husna-hussainkhan/images/bg2.jpg);
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -241,24 +241,24 @@ h1 {
 }
 
 .carousel .image-one {
-    background-image: url("images/img1.jpg");
+    background-image: url("husna-hussainkhan/images/img1.jpg");
     background-size: cover;
     background-position: 10% 35%;
 
 }
 .carousel .image-two {
-    background-image: url("images/img2.jpg");
+    background-image: url("husna-hussainkhan/images/img2.jpg");
     background-position: 50% 20%;
 }
 .carousel .image-three {
-    background-image: url("images/img3.jpg");
+    background-image: url("husna-hussainkhan/images/img3.jpg");
     background-size: cover; 
     background-position: 20% 40%;            
 
 }
 
 .carousel .image-four {
-    background-image: url("images/cute.jpg");
+    background-image: url("husna-hussainkhan/images/cute.jpg");
     background-size: cover;
     background-position: 50% 50%;
 }
@@ -357,7 +357,7 @@ h1 {
     margin: auto;
     margin-top: 1rem;
     background-color: var(--cream);
-    background-image: url(images/bg.jpg);
+    background-image: url(husna-hussainkhan/images/bg.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 50px;
@@ -591,4 +591,5 @@ footer {
     .social-icon {
         font-size: 1.2rem;
     }
+
 }
