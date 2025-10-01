@@ -21,11 +21,11 @@ document.getElementById('addToCalendarBtn').addEventListener('click', function (
 
     // Create event details
     const event = {
-        title: 'Aisha & Mohammed Nikkah Ceremony',
-        start: new Date('2024-05-25T19:30:00'),
-        end: new Date('2024-05-25T23:00:00'),
-        location: 'Islamic Center of Houston, 123 Main St, Houston, TX',
-        description: 'Join us for the Nikkah ceremony of Aisha Khan and Mohammed Ali'
+        title: 'Husna & Hussainkhan Nikkah Ceremony',
+        start: new Date('2025-07-19T19:30:00'),
+        end: new Date('2025-07-19T23:00:00'),
+        location: 'Sha International Chettuva',
+        description: 'Join us for the Nikkah ceremony of Husna and Hussainkhan'
     };
 
     // Create .ics file
@@ -74,3 +74,4 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.couple, .calendar, .map-container').forEach(el => {
     observer.observe(el);
 });
+
