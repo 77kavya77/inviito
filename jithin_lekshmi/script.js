@@ -94,7 +94,7 @@ const imageCounter = document.getElementById('imageCounter');
 
 // Image data (9 images)
 const images = [
-    'images/1.jpeg',
+    'jithin_lekshmi/images/1.jpeg',
     'images/2.jpeg',
     'images/3.jpeg',
     'images/4.jpeg',
@@ -170,3 +170,4 @@ document.addEventListener('keydown', (e) => {
         }
     }
 });
+
