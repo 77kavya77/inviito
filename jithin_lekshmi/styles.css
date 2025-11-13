@@ -124,7 +124,7 @@ body {
 
 .door span {
     bottom: 30px;
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-family: 'Great Vibes', cursive;
     color: var(--gold);
     letter-spacing: 2px;
@@ -839,4 +839,5 @@ body {
     }
 
 }
+
 
