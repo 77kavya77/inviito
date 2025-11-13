@@ -95,14 +95,14 @@ const imageCounter = document.getElementById('imageCounter');
 // Image data (9 images)
 const images = [
     'jithin_lekshmi/images/1.jpeg',
-    'images/2.jpeg',
-    'images/3.jpeg',
-    'images/4.jpeg',
-    'images/5.jpeg',
-    'images/6.jpeg',
-    'images/7.jpeg',
-    'images/8.jpeg',
-    'images/9.jpeg'
+    'jithin_lekshmi/images/2.jpeg',
+    'jithin_lekshmi/images/3.jpeg',
+    'jithin_lekshmi/images/4.jpeg',
+    'jithin_lekshmi/images/5.jpeg',
+    'jithin_lekshmi/images/6.jpeg',
+    'jithin_lekshmi/images/7.jpeg',
+    'jithin_lekshmi/images/8.jpeg',
+    'jithin_lekshmi/images/9.jpeg'
 ];
 
 let currentImageIndex = 0;
@@ -170,4 +170,5 @@ document.addEventListener('keydown', (e) => {
         }
     }
 });
+
 
