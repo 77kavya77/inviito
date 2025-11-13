@@ -122,14 +122,6 @@ body {
     left: 20px;
 }
 
-.door span {
-    bottom: 30px;
-    font-size: 1.5rem;
-    font-family: 'Great Vibes', cursive;
-    color: var(--gold);
-    letter-spacing: 2px;
-}
-
 /* Invitation Content */
 .invitation-card > * {
     max-width: 100% !important;
@@ -839,5 +831,6 @@ body {
     }
 
 }
+
 
 
