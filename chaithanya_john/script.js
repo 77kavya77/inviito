@@ -105,7 +105,7 @@ document.querySelectorAll('.social-icon').forEach(icon => {
 
         if (this.querySelector('.fa-whatsapp')) {
             // WhatsApp sharing
-            const text = "You're invited to John and Chaithanya's wedding on December 29, 2025!";
+            const text = "Hello! ..";
             const url = encodeURIComponent(window.location.href);
             window.open(`https://wa.me/?text=${encodeURIComponent(text + ' ' + url)}`, '_blank');
         } else if (this.querySelector('.fa-instagram')) {
@@ -357,3 +357,4 @@ document.addEventListener('DOMContentLoaded', function () {
     setTimeout(detectOverflowElements, 300);
     setTimeout(detectOverflowElements, 1200); // run again after fonts/images load
 });
+
