@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John & Chaithanya's Wedding Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Raleway:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header with digital clock -->
+        <header>
+            <h1>John & Chaithanya</h1>
+            <div class="subtitle">Invite you to celebrate their wedding</div>
+            <!-- Digital time and date display (used by script.js) -->
+            <div class="date-display">
+                <div id="digital-time" class="digital-time" aria-live="polite"></div>
+                <div id="digital-date" class="digital-date" aria-live="polite"></div>
+            </div>
+        </header>
+
+        <!-- Couple Information -->
+        <section class="couple-info">
+            <div class="groom">
+                <h2 class="couple-name">John Soloman</h2>
+                <div class="parents">
+                    Son of Mrs. Sheeba Soloman &<br>Late Mr. E Y Soloman
+                </div>
+            </div>
+
+            <div class="and">&</div>
+
+            <div class="bride">
+                <h2 class="couple-name">Chaithanya Shajumon</h2>
+                <div class="parents">
+                    Daughter of Mrs. Soba Shajumon &<br>Mr. Shajumon N O
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Gallery -->
+        <section class="gallery-section">
+            <h2 class="section-title">Our Journey Together</h2>
+            <div class="gallery">
+                <!-- Photo frames for 8 images - Using mobile-friendly portrait images -->
+                <div class="photo-frame" data-index="0">
+                    <img src="images/img1.jpeg" alt="Couple photo 1" data-src="images/img1-large.jpeg">
+                </div>
+                <div class="photo-frame" data-index="1">
+                    <img src="images/img2.jpeg" alt="Couple photo 2" data-src="images/img2-large.jpeg">
+                </div>
+                <div class="photo-frame" data-index="2">
+                    <img src="images/img3.jpeg" alt="Couple photo 3" data-src="images/img3-large.jpeg">
+                </div>
+                <div class="photo-frame" data-index="3">
+                    <img src="images/img4.jpeg" alt="Couple photo 4" data-src="images/img4-large.jpeg">
+                </div>
+                <div class="photo-frame" data-index="4">
+                    <img src="images/img5.jpeg" alt="Couple photo 5" data-src="images/img5-large.jpeg">
+                </div>
+                <div class="photo-frame" data-index="5">
+                    <img src="images/img8.jpeg" alt="Couple photo 6" data-src="images/img8-large.jpeg">
+                </div>
+                <div class="photo-frame" data-index="6">
+                    <img src="images/img7.jpeg" alt="Couple photo 7" data-src="images/img7-large.jpeg">
+                </div>
+                <div class="photo-frame" data-index="7">
+                    <img src="images/img6.jpeg" alt="Couple photo 8" data-src="images/img6-large.jpeg">
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox for images -->
+        <div class="lightbox" id="lightbox">
+            <button class="lightbox-close" id="lightboxClose" title="Close (or tap anywhere)">×</button>
+            <div class="lightbox-content">
+                <img class="lightbox-img" id="lightboxImage" src="" alt="">
+                <div class="lightbox-counter">
+                    <span id="currentIndex">1</span> / <span id="totalImages">8</span>
+                </div>
+            </div>
+            <div class="lightbox-nav">
+                <button class="lightbox-btn" id="prevBtn" title="Previous">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="lightbox-btn" id="nextBtn" title="Next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Event Details -->
+        <section class="event-details">
+            <h2 class="section-title">Event Details</h2>
+            <div class="event-card">
+                <div class="event-icon">
+                    <i class="fas fa-church"></i>
+                </div>
+                <h3 class="event-title">Wedding Ceremony</h3>
+                <div class="event-time">Monday, 29 December 2025 at 10:00 AM</div>
+                <div class="event-location">
+                    <strong>Mar Yohannan Mamdhana Church</strong><br>
+                    Eastfort, Thrissur, Kerala 680005
+                </div>
+                <div class="event-action">
+                    <a href="https://maps.google.com/?q=Mar+Yohannan+Mamdhana+Church+Eastfort+Thrissur" target="_blank"
+                        class="direction-btn">
+                        <i class="fas fa-map-marker-alt"></i> Get Directions
+                    </a>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <div class="event-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h3 class="event-title">Wedding Reception & Lunch</h3>
+                <div class="event-time">Monday, 29 December 2025 at 1:00 PM</div>
+                <div class="event-location">
+                    <strong>Elinor Convention Centre</strong><br>
+                    Vinpy Nagar, Paravattani, Thrissur, Kerala 680002
+                </div>
+                <div class="event-action">
+                    <a href="https://maps.google.com/?q=Elinor+Convention+Centre+Vinpy+Nagar+Paravattani+Thrissur"
+                        target="_blank" class="direction-btn">
+                        <i class="fas fa-map-marker-alt"></i> Get Directions
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add to Calendar -->
+        <section class="calendar-section">
+            <a href="#" class="add-to-calendar" id="addToCalendar">
+                <i class="far fa-calendar-plus"></i> Add to Calendar
+            </a>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Inviito Logo">
+                </div>
+                <div class="organizer">
+                    Organized with love by <strong>Inviito</strong>
+                </div>
+
+                <div class="social-icons">
+                    <a href="https://wa.me/+918921242289?text=Hello!%20I%20want%20to%20know%20more%20about%20your%20wedding%20invitation."
+                        target="_blank" class="social-icon" aria-label="Share on WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/inviito?igsh=cDIyeHNxM3Vhamdy" class="social-icon"
+                        aria-label="Follow on Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://inviito.com" class="social-icon" aria-label="Visit Inviito Website">
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+
+                <div class="copyright">
+                    © 2025 John & Chaithanya Wedding Invitation. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Leaflet JS for Maps -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
