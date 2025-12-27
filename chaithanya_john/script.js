@@ -105,9 +105,9 @@ document.querySelectorAll('.social-icon').forEach(icon => {
 
         if (this.querySelector('.fa-whatsapp')) {
             // WhatsApp sharing
-            const text = "Hello! ..";
+            const text = "Hello! I want to know more about your wedding invitation.";
             const url = encodeURIComponent(window.location.href);
-            window.open(`https://wa.me/?text=${encodeURIComponent(text + ' ' + url)}`, '_blank');
+            window.open(`https://wa.me/?text=${encodeURIComponent(text + ' ' )}`, '_blank');
         } else if (this.querySelector('.fa-instagram')) {
             // Instagram (just open Instagram in this demo)
             window.open('https://instagram.com', '_blank');
@@ -357,4 +357,5 @@ document.addEventListener('DOMContentLoaded', function () {
     setTimeout(detectOverflowElements, 300);
     setTimeout(detectOverflowElements, 1200); // run again after fonts/images load
 });
+
 
